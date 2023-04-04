@@ -3,7 +3,7 @@
 VM Software, o Video Club Manager Software es un sistema CRUD que le permite a un negocio de Video Club controlar su inventario. Este proyecto fue realizado como un trabajo escolar que planteaba conectar una aplicación de escritorio a una base de datos de MySql. Dicha aplicación de escritorio fue creada en base a C#, .NET Framework 4.7.2 y Windows Forms.
 
 # ¿Cómo instalar este programa para verlo en funcionamiento?
-## Descargar carpeta Realese
+## Descargar carpeta Release
 
 La carpeta realese contiene el ejecutable "proyecto Topicos.exe" junto a todos los recursos que necesita la aplicación para funcionar, bastará con ejecutar el .exe. Sin embargo, hay que considerar que el proyecto fue realizado con .NET Framework 4.7.2 y se necesita esta misma para que pueda funcionar. Además, es necesario correr una instancia de MySQL con la base de datos adjunta importada y funcionando para poder acceder a todas las funciones del programa.
 
@@ -11,7 +11,7 @@ La carpeta realese contiene el ejecutable "proyecto Topicos.exe" junto a todos l
 En el repositorio se puede ver el archivo "vmsoftware.sql", esta es la base de datos MySql usada para el proyecto. Es recomendable usar Apache y MySql con phpMyAdmin para importar y hostear localmente esta base de datos. De esta manera, se podrá usar integramente el programa.
 
 # Uso del programa
-Una vez se haya compeletado la instalación, se puede ejecutar "proyecto Topicos.exe" dentro de la carpeta Realese y se procederá a abrir la aplicación con la siguiente pantalla:
+Una vez se haya compeletado la instalación, se puede ejecutar "proyecto Topicos.exe" dentro de la carpeta Release y se procederá a abrir la aplicación con la siguiente pantalla:
 
 <p align="center">
   <img src="/ImagenesReadme/Principal.png" alt="Pantalla principal">
