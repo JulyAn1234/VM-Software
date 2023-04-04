@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E35F38C-3379-439F-9EE3-DC10D15DCD62}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>proyecto_Topicos</RootNamespace>
+    <AssemblyName>proyecto Topicos</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddActor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddActor.Designer.cs">
+      <DependentUpon>AddActor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCassette.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCassette.Designer.cs">
+      <DependentUpon>AddCassette.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCharacter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCharacter.Designer.cs">
+      <DependentUpon>AddCharacter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddClient.Designer.cs">
+      <DependentUpon>AddClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDirector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDirector.Designer.cs">
+      <DependentUpon>AddDirector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddRent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRent.Designer.cs">
+      <DependentUpon>AddRent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grids.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grids.Designer.cs">
+      <DependentUpon>Grids.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMovie.Designer.cs">
+      <DependentUpon>AddMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaId.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaId.Designer.cs">
+      <DependentUpon>VentanaId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SCmb.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sqlClass.cs" />
+    <Compile Include="STxt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="AddActor.resx">
+      <DependentUpon>AddActor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCassette.resx">
+      <DependentUpon>AddCassette.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCharacter.resx">
+      <DependentUpon>AddCharacter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddClient.resx">
+      <DependentUpon>AddClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDirector.resx">
+      <DependentUpon>AddDirector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRent.resx">
+      <DependentUpon>AddRent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grids.resx">
+      <DependentUpon>Grids.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMovie.resx">
+      <DependentUpon>AddMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaId.resx">
+      <DependentUpon>VentanaId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imagenes\Iconos\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imagenes\Iconos\minus-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imagenes\Iconos\minimize-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imagenes\Iconos\close %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imagenes\Iconos\close %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imagenes\Iconos\close-option.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Imagenes\Iconos\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\src\Imagenes\Iconos\imgMarca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\src\Imagenes\Iconos\imgModificar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\src\Imagenes\Iconos\imgQuitar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\src\Imagenes\Iconos\imgPerdido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\src\Imagenes\Iconos\imgEntrega.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\src\Imagenes\Iconos\imgPasarANoDisponible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\src\Imagenes\Iconos\imgPasarADisponible.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
